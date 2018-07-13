@@ -13,7 +13,7 @@ for i in range(n):
 
 
 def arima(p, d, q):
-    print(p,d,q)
+    print(p, d, q)
     try:
         model = ARIMA(data[:-10], order=(p, d, q))
         result = model.fit()
